@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Orbitron);
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans');
+
+/*    Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+body {position:relative;  width:100%;  }
+a { outline:0; text-decoration:none; color:#bbb;}
+img {border:0;}
+
+.wrap {position:relative; width:100%; top:0px; left:0px;}
+
+h1 {position:fixed; left:50%; font:bold 20px/20px 'Crimson Text'; color:#000; top:50px; margin-left:-30px; cursor:pointer;}
+
+.box1 {position:fixed; width:1100px; height:800px; top:180px; left:50%; margin-left:-550px;}
+.box1>img {width:1100px; height:auto; position:absolute; top:0px; left:50%; margin-left:-550px;}
+
+/*naviBox*/
+.naviBox {position:fixed; top:0px; left:-2000px; width:100%; height:100%; background:#fff;  transition:all 0.7s; opacity:0;}
+.naviBox.on {left:0px; opacity:1;}
+.naviBox>strong>a {position:absolute; bottom:150px; right:560px; font:24px/24px 'Encode Sans', sans-serif; color:#bbb; }
+.naviBox>strong>a:hover {color:#000;}
+.naviBox>img {width:700px; height:auto;}
+
+#menu {position:absolute; top:50%; margin-top:-200px; right:170px; }
+#menu>li>a {font:70px/100px 'Kaushan Script', cursive; color:#bbb;}
+#menu>li>a:hover {color:#000;}
+
+
+
+
+
+
+/*social media*/
+#sns {position:fixed; top:250px; right:50px; }
+#sns li {margin-bottom:100px; transition:all 0.5s;}
+#sns li a  { font-size:16px; color:#000; }
+#sns li:hover {transform:scale(1.5);}
+
+/*hamburger Btn*/
+.hamBtn {position:fixed; left:50px; top:300px; transition:all 0.5s; }
+.hamBtn>a>i {display:block; font-size:20px; color:#000;}
+.hamBtn:hover {transform:scale(1.2);}
+
+/*hamburger Btn*/
+.closeBtn {display:none; position:fixed; left:50px; top:300px; transition:all 0.5s; }
+.closeBtn>a>i {display:block; font-size:20px; color:#000;}
+.closeBtn:hover {transform:scale(1.2);}
+
+/*scrollDown*/
+.scrollDown {position:fixed; bottom:20px; left:50px;}
+span {position:fixed; bottom:30px; left:-6px; transform:rotate(270deg); font:bold 14px/14px 'Crimson Text'; color:#000; margin-bottom:70px; }
+.scrollDown a i {font-size:18px; color:#000;}
+
+#navi1 {position:fixed; top:50px; left:50px;}
+#navi1 li {float:left; margin-right:30px;  transition:all 0.5s;}
+#navi1 li a  {font:bold 16px/16px 'Crimson Text'; color:#000;}
+#navi1 li:hover {transform:scale(1.5);}
+#navi2 {position:fixed; top:50px; right:50px;}
+#navi2 li {float:left; margin-left:30px; transition:all 0.5s;}
+#navi2 li a  {font:bold 16px/16px 'Crimson Text'; color:#000;}
+#navi2 li:hover {transform:scale(1.5);}
+/*secondPic*/
+.box2 {position:fixed; width:100%; height:800px; top:3818px;}
+.box2>img {width:800px; height:auto; position:absolute; top:0px; left:0px; }
+/*secondTypo*/
+.typo2 {position:fixed; top:0px; right:-3800px; width:800px; height:800px; opacity:0;}
+.typo2>h2 {position:absolute; top:200px; right:230px; font:bold 50px/50px 'Crimson Text'; color:#000; }
+.typo2>h4 {position:absolute; top:400px; right:130px; font:20px/25px 'Crimson Text'; color:#000; }
+
+/*box3*/
+.box3 {position:fixed; height:800px; bottom:0px; left:-3800px; width:100%;}
+.box3>img {width:800px; height:auto; position:absolute; top:0px; left:0px; }
+.typo3 {position:fixed; top:0px; right:-800px; width:800px; height:800px; opacity:0;}
+.typo3>h2 {position:absolute; top:200px; right:320px; font:bold 50px/50px 'Crimson Text'; color:#000; }
+.typo3>h4 {position:absolute; top:400px; right:130px; font:20px/25px 'Crimson Text'; color:#000; }
+
+/*box4*/
+.box4 {position:fixed; width:100%; height:800px; top:3818px;}
+.box4>img {width:800px; height:auto; position:absolute; top:0px; left:0px; }
+.typo4 {position:fixed; top:0px; right:-800px; width:800px; height:800px; opacity:0;}
+.typo4>h2 {position:absolute; top:200px; right:230px; font:bold 50px/50px 'Crimson Text'; color:#000; }
+.typo4>h4 {position:absolute; top:400px; right:130px; font:20px/25px 'Crimson Text'; color:#000; }

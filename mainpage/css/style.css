@@ -1,0 +1,1097 @@
+@charset "utf-8";
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url('https://fonts.googleapis.com/css?family=Tajawal:300,400,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Racing+Sans+One');
+
+/*    Reset CSS  */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td
+{ margin:0;  padding:0;}
+table {border-collapse:collapse; border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,var {font-style:normal; font-weight:normal; }
+ol,ul {list-style: none; }
+caption,th { text-align:left;}
+h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight:normal;}
+q:before,q:after {content:"";}
+abbr, acronym {border:0;}
+a {text-decoration: none; }
+em { font-style:normal; }
+html,body { font-family: 'Tajawal', sans-serif; height:100%;
+cursor:url('../img/cursor2.cur') 0 0, auto;
+ }
+.h { position:absolute; left:-99999px; }
+
+#particles-js {
+	position:fixed; top:0px; left:0px;
+	index:-100; width:100%; height:100%;
+	background-color:#eee; z-index:-3;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.div {padding:0;}
+
+@media (min-width: 1200px){
+    .container {
+		
+        max-width: 1240px;
+    }
+}
+
+
+.changeScreen {width:100%; height:100%; background:#2b2b2b;
+position:fixed; top:0; left:-200%;}
+
+
+
+
+
+.wrapper {width:100%; display:block;  }
+.mainContents {height:100%; opacity:1; }
+.container {position:relative; height:100%; }
+
+.header {padding:0px;}
+.header>h1.logo {font-family: 'Racing Sans One', cursive;
+}
+
+/*hamburgerMenuBox*/
+.hamburgerMenuBox {
+	width:100%; height:0%;
+	background:#000;
+	opacity:0.5;
+	position:fixed; top:-1000px; left:0px; 
+
+}
+
+.hamburgerMenuBox #menu {
+
+	text-align:center;
+	width:100%;
+	position:absolute; top:50%; margin-top:-181px;
+	
+}
+
+.hamburgerMenuBox li>a {
+	display:block;
+	font-size:40px;
+	font-weight:bold;
+	margin-bottom:30px;
+	color:#aaa;
+	text-decoration:none;
+	cursor:pointer;
+	transition: all 0.5s;
+}
+
+.hamburgerMenuBox li>a:hover {
+	color:#fff;
+	font-size:45px;
+	
+}
+
+	
+	
+	
+
+
+/*contact*/
+.conWrap {margin-top:10%;}
+
+
+/*header*/
+.navWrapper {height:70px; opacity:1; position:fixed; top:20px; opacity:0; cursor:pointer; }
+
+
+.pagenavburger {position:absolute; top:10px; right:0px;}
+
+	/*logo*/
+	.navWrapper h1>a {font:bold 30px/70px  'Racing Sans One', cursive; color:#000; cursor:pointer;
+		position:absolute; top:0px; left:0px; padding-right:0;
+		transition:all 0.5s; text-decoration:none; }
+		
+	.navWrapper h1>a:hover { transform:scale(1.1);}
+
+	/*navigation*/
+	#navi { position:absolute; right:0px; top:0px; text-align:right; }
+	#navi>li {font:17px/70px 'Tajawal', sans-serif; color:#bbb; float:left; margin-left:30px; transition:all 0.5s;
+	   }
+	
+	#navi>li.on { color:#000; font:italic 17px/70px 'Tajawal', sans-serif;  text-decoration: line-through;
+	}
+	#navi>li:hover {color:#000; font:italic 17px/70px 'Tajawal', sans-serif;  text-decoration: line-through; 
+	}
+
+
+
+
+
+/*background-typo*/
+.bg-typo {font:bold 200px/200px 'Tajawal', sans-serif; color:#fff; filter:blur(2px);
+position:fixed; top:50%; left:50%;  margin-top:-100px; margin-left:-450px;
+width:900px; height:200px; opacity:0; text-align:center; transition:all 1s; 
+z-index:0;
+}
+.bg-typo2 {position:fixed; top:50%; left:50%;  margin-top:-100px; margin-left:-450px;
+width:900px; height:200px; opacity:0; text-align:center;}
+.bg-typo1.on {opacity:0.5; }
+.bg-typo2.on {opacity:0.5; }
+.bg-typo3.on {opacity:0.5; }
+.bg-typo4.on {opacity:0.5; }
+
+
+/*blurBox*/
+.blur-boxtop {
+	width:100%; height:100px;
+	position:fixed; top:-50px;
+	background:#eee;
+	filter:blur(10px);
+	opacity:0.5;
+	
+}
+
+.blur-boxbottom {
+	width:100%; height:100px;
+	position:fixed; bottom:-50px;
+	background:#eee;
+	filter:blur(10px);
+	opacity:0.5;
+
+}
+
+
+
+
+
+
+
+.wrapper {height:400%; position:relative;}
+
+	
+/*first-page*/
+#about {height:25%; position:relative;}
+
+
+/*introduction typo*/				
+.typo {position:absolute; top:50%;  opacity:0;  z-index:100; 
+ font-size:70px; line-height:80px; font-family: 'Tajawal', sans-serif; text-align:center;
+transition:all 0.5s; transform-origin: top left; }
+.typo.show {opacity:1;}
+.typo.on {transform:scale(0.28,0.28); text-align:left; margin-left:0px; position:fixed; opacity:1; }
+.typo>span{background: -webkit-linear-gradient(60deg, #000, #ccc);
+	color: transparent;
+	-webkit-background-clip: text;
+    font-weight: 300;
+}
+
+
+
+
+			
+/*second-page:skillset*/
+#skillset {height:20%; margin-top:35%; z-index:9999; }
+#skillset p {font:22px/30px 'Tajawal', sans-serif; color:#000; padding:30px; }
+#skillset>div>div {background: #fff; margin-bottom: 5%;}
+
+
+
+
+
+/*third-page:portfolio*/
+#portfolio { margin-top:5%; }
+#portfolio>div {margin-bottom: 20px; }
+#portfolio>div>a {width:100%; }
+#portfolio img{
+    width: 100%; cursor:pointer; 
+	opacity:0.7; transition:all 0.5s; 
+}
+
+#portfolio img:hover {opacity:1;}
+
+
+.pfBox>a {width:100%; height:100%; display:block;}
+.pfBox>a>img {}
+		.port_title h2{
+			font-size: 30px;
+			padding:10px;
+			
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			margin: 0;
+			font-weight: 400;
+			letter-spacing: 1px;
+			
+
+		}
+
+		.port_title2{
+			font-size:30px;
+			padding:10px;
+			
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			margin: 10px 0;
+			font-weight: 400;
+			letter-spacing: 1px;
+			
+			cursor:pointer;
+
+		}
+
+
+		.port_title2:hover {  background: #fff;
+			color: #000; }
+
+		.port_title2>a {color:#fff;}
+		.port_title2:hover >a {text-decoration:none; color:#000;}
+	
+
+
+
+/*프로젝트박스*/
+.myProjectBox {width:100%; height:100%; display:none;
+/*background:url('../img/myproject.jpg'); background-size:cover;*/
+position:absolute; top:0px; left:0px; }
+.projectHeader {width:100%; height:15%;
+position:fixed; top:0px; left:0px; display:block;}
+.myProjectBox>h1 {font:bold 30px/30px 'Racing Sans One', cursive; color:#fff;
+position:absolute; top:5%; left:5%; }
+.myProjectBox>h3 {font: 18px/18px 'Tajawal', sans-serif; color:#000;
+position:absolute; top:5%; right:5%; }
+
+
+.myProjectLogo {
+    font: bold 30px/70px 'Racing Sans One', cursive;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding-right: 0;
+}
+
+.myProjectLogo2 { font:bold 30px/30px 'Tajawal'; color:#fff;
+   position:fixed; top:50%; left:50%; margin-top:; margin-left:;
+    display: inline-block;
+
+	}
+
+.projectFooter {width:100%; height:15%;
+position:fixed; bottom:0px; left:0px; display:block;}
+.closeBtn { font-size: 30px;
+    padding:10px 20px;
+	font-family: 'Tajawal', cursive;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    margin: 3%;
+    font-weight: 400;
+    letter-spacing: 1px;
+	position:absolute; bottom:0px; right:0px;
+	cursor:pointer;
+	transition:all 1s;
+	}
+
+.closeBtn:hover {
+	background:#fff; color:#000;
+}
+	
+.bgBox {width:40%; height:100%;
+background:#eee;
+position:absolute; top:0px; right:0px;}
+
+
+.projTitle>h1 {
+	font: bold 100px/100px 'Tajawal', cursive; color:#000;
+	position:absolute; top:20%; left:5%;
+}
+
+.projTitle>p {font:20px/20px 'Tajawal', cursive; color:#000;
+	position:absolute; top:75%; left:5%;}
+.projTitle>a{font:20px/20px 'Tajawal', cursive; color:#000;
+	position:absolute; top:85%; left:5%; text-decoration:none;
+	}
+	
+.projTitle>a:hover {text-decoration:none; color:#000;}
+	
+.projTitle>span {width:30px; height:1px; background:#000;
+	position:absolute; top:89%; left:5%;}
+	
+	
+.projBoxWrapper {
+	width:45%; height:45%; 
+	position:fixed; top:8%; right:15%;
+}	
+	
+ul#projBox>li {width:33.3333%; height:200px; 
+ float:left; cursor:pointer;
+}
+	
+	/*이미지*/
+#projBox>li>a>img {width:100%; height:100%; opacity:0.7; transition:all 0.5s;}
+#projBox>li:hover >a>img {width:96%; height:96%; margin:2%; opacity:1;}	
+	
+	
+	
+/*forth-page:contact*/
+#contact {  position:relative; margin-bottom:10%; }    	
+#contact h2 {font:bold 80px/80px 'Tajawal', sans-serif; color:#333;
+				margin-top:15%; }
+
+
+.conWrap {margin-top:0%; margin-bottom:30%;}
+
+#conExplain {font:15px/17px 'Tajawal'; color:#000; margin-top:30%; }
+#conExplain>li {  float:left; width:250px;
+}
+#conExplain>li:nth-child(1) {margin-right:30px;}
+
+/*.jobTitle {position:absolute; margin-top:10%;
+font:bold 18px/18px 'Tajawal'; color:#000;}*/
+.intro {  font:bold 23px/24px 'Tajawal'; color:#000; }	
+
+.contactBox>a {font:italic 25px/25px 'Tajawal'; color:#fff;
+background:#444; margin-bottom:5%;  }
+
+
+
+
+
+
+/*btn*/
+.footer {position:fixed; bottom:10%; left:0; width:100%; opacity:0;
+
+ }
+#btn { width:100%; position:absolute; 
+opacity:1; 
+ font:bold 18px/18px 'Tajawal', sans-serif; color:#000;    }
+.work-btn {float:left;}
+
+.resume-btn {float:right;  }
+.resume-btn>a {color:#000; }
+.resume-btn>a:hover {text-decoration:none; color:#fff;}
+
+.buttonfx{
+  color: black; /* button text color */
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 6px solid #000;
+  padding: 4px 8px 0 8px;
+  text-transform: uppercase;
+  font: 900 20px 'Tajawal', sans-serif; /* use google font */
+  position: relative;
+	display: inline-block;
+
+  cursor: pointer;
+	text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all .5s;
+  
+  
+}
+
+.buttonfx.on {
+    font:900 18px 'Tajawal', sans-serif;  
+    border-bottom: 4px solid #000;
+    padding: 2px 6px 0 6px;
+}
+
+
+.buttonfx:before,
+.buttonfx:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #000; /* on hover background color */
+  z-index: -1;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+ 
+}
+
+.buttonfx:before{
+  background:transparent; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.buttonfx:hover{
+	color: white;
+}
+
+.buttonfx:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+
+.slideleft:after{
+  top: 0;
+  z-index: -1;
+  transform: translate3D(0,101%,0);
+}
+
+.slideleft:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+
+
+/*hamburger 버튼*/
+#hamburger{
+  transition: .3s ease-out;
+  width: 23px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  opacity:0;
+  margin-right:15px;
+z-index:4000;
+}
+  
+#hamburger span{
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 18px;
+  background: #333;
+  transition: .3s ease-out;
+}
+
+#hamburger span:nth-child(1){
+top: 7px
+}
+
+#hamburger span:nth-child(2), span:nth-child(3){
+    top: 12px
+}
+
+#hamburger span:nth-child(4){
+top: 17px}
+
+#hamburger.open span:nth-child(1){
+  width: 0;
+transform: translate(9px,6px);
+}
+  
+#hamburger.open span:nth-child(2){
+  transform: rotate(45deg);
+}
+  
+#hamburger.open span:nth-child(3){
+  transform: rotate(-45deg);
+}
+  
+#hamburger.open span:nth-child(4){
+  width: 0;
+transform: translate(9px,-6px);}
+
+
+
+
+
+
+
+
+
+
+/*responsive design*/
+
+
+/*타블렛 여기부터 작은것*/
+@media screen and (min-width:487px) and (max-width:767px) {	
+
+
+
+
+
+/*header*/
+.navWrapper {height:50px;}
+
+
+/*logo*/
+.navWrapper h1 {font:bold 15px/50px 'Tajawal', sans-serif;  color:#000; cursor:pointer;
+ padding-right:0;
+ }
+
+
+/*navigation*/
+#navi>li {opacity:0;}
+
+
+/*hamburger menu btn*/
+#hamburger{
+  transition: .3s ease-out;
+  width: 23px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  opacity:1;
+}
+
+	
+/*background-typo*/
+.bg-typo {display:none;}
+.bg-typo2 {position:fixed; top:50%; left:50%;  margin-top:-100px; margin-left:-300px;
+width:600px; height:200px; opacity:0; text-align:center;}
+.bg-typo1.on {opacity:1;}
+.bg-typo2.on {opacity:1;}
+.bg-typo3.on {opacity:1;}
+.bg-typo4.on {opacity:1;}
+
+
+	
+
+
+
+/*introduction typo*/				
+.typo {position:absolute; top:120px;  opacity:1;  z-index:100; 
+ font-size:45px; line-height:55px; font-family: 'Tajawal', sans-serif; text-align:center;
+transition:all 0.5s; transform-origin: top left; }
+.typo.on {transform:scale(0.3,0.3); text-align:left;  margin-left:0px; }
+.typo>span{background: -webkit-linear-gradient(60deg, #000, #ccc);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+	
+	
+/*second-page:skillset*/
+#skillset {height:20%; margin-top:70%;  }
+
+
+#skillset p {font:20px/25px 'Tajawal', sans-serif; color:#000; padding:20px; }
+
+
+/*forth-page:contact*/
+#contact { position:relative; width:100%;   }    	
+#contact h2 {font:bold 40px/40px 'Tajawal', sans-serif; color:#333;
+				margin-top:15%; }	
+
+.con-typo>h3 {font:italic 12px/30px 'Tajawal', sans-serif; color:#333;
+				margin-top:5%;}					
+.con-typo {margin-bottom:15%;}			
+#contact p {font:14px/20px 'Tajawal'; color:#444; 
+margin-top:5%; text-align:left; width:300px;}		
+
+#findMe {margin-top:20px; margin-bottom:200px;  }
+#findMe>li { float:left; margin-right:30px; }				
+#findMe>li>a {font:18px/18px 'Tajawal'; color:#000; }
+	
+
+
+/*포트폴리오 문단*/
+#portfolio {margin-bottom:5%; margin-top:10%;}
+#portfolio>div {margin-bottom:2%; }
+.port_title h2{
+			font-size: 20px;
+			padding:10px;
+			
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			margin: 0;
+			font-weight: 400;
+			letter-spacing: 1px;
+			
+
+		}
+		
+/*프로젝트박스*/
+
+	
+.bgBox {width:60%; height:100%;
+background:#eee;
+position:absolute; top:0px; right:0px;}
+
+
+.projTitle>h1 {
+display:none;
+}
+
+.projTitle>p {display:none;}
+.projTitle>a{display:none;}
+.projTitle>span {display:none;}
+	
+	
+.projBoxWrapper {
+	width:90%; height:45%; 
+	position:fixed; top:50%; right:5%;
+	margin-top:-225px;
+}	
+	
+ul#projBox>li {width:33.3333%; height:150px; 
+ float:left; cursor:pointer;
+}
+
+}
+
+
+
+
+
+
+
+/*타블렛 large*/
+@media screen and (min-width:768px) and (max-width:1000px) {
+
+
+
+/*header*/
+.navWrapper {height:50px;}
+
+
+/*logo*/
+.navWrapper h1 {font:bold 15px/50px 'Tajawal', sans-serif; color:#000; color:#000; cursor:pointer;
+padding-right:0;
+ }
+
+/*navigation*/
+#navi>li {opacity:0;}
+
+
+/*hamburger menu btn*/
+#hamburger{
+  transition: .3s ease-out;
+  width: 23px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  opacity:1;
+}
+		
+	
+/*background-typo*/
+.bg-typo {font:bold 150px/150px 'Tajawal', sans-serif; color:#fff; filter:blur(2px);
+position:fixed; top:50%; left:50%;  margin-top:-100px; margin-left:-350px;
+width:700px; height:200px; opacity:0; text-align:center; transition:all 1s;
+}
+.bg-typo2 {position:fixed; top:50%; left:50%;  margin-top:-100px; margin-left:-300px;
+width:600px; height:200px; opacity:0; text-align:center;}
+.bg-typo1.on {opacity:1;}
+.bg-typo2.on {opacity:1;}
+.bg-typo3.on {opacity:1;}
+.bg-typo4.on {opacity:1;}
+
+
+/*introduction typo*/				
+.typo {position:absolute; top:150px;  opacity:1;  z-index:100; 
+ font-size:50px; line-height:60px; font-family: 'Tajawal', sans-serif; text-align:center;
+transition:all 0.5s; transform-origin: top left; }
+.typo.on {transform:scale(0.3,0.3); text-align:left;   margin-left:0px; }
+.typo>span{background: -webkit-linear-gradient(60deg, #000, #ccc);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+	
+
+/*second-page:skillset*/
+#skillset {height:20%; margin-top:70%; }
+
+
+#skillset p {font:22px/30px 'Tajawal', sans-serif; color:#000; padding:30px; }
+
+
+
+
+/*forth-page:contact*/
+#contact {  position:relative; width:100%;  }    	
+#contact h2 {font:bold 50px/50px 'Tajawal', sans-serif; color:#333;
+				margin-top:5%; }	
+.con-typo>h3 {font:italic 15px/35px 'Tajawal', sans-serif; color:#333;
+				margin-top:5%; }					
+.con-typo {margin-bottom:15%;}			
+#contact p {font:15px/20px 'Tajawal'; color:#444; 
+margin-top:3%; text-align:left;}		
+
+.Education {
+	margin-top:5%;
+}
+
+
+#findMe {margin-top:20px;}
+#findMe>li { float:left; margin-right:30px; }				
+#findMe>li>a {font:18px/18px 'Tajawal'; color:#000;}
+	
+/*hireMe btn*/	
+.port_title2{
+			font-size:30px;
+			padding:10px;
+			
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			margin: 10px 0;
+			font-weight: 400;
+			letter-spacing: 1px;
+			
+			cursor:pointer;
+
+		}
+	
+/*btn*/
+.footer {position:fixed; bottom:120px; left:0; width:100%;}
+#btn { width:100%;
+opacity:1;  z-index:100;
+ font:bold 12px/15px 'Tajawal', sans-serif; color:#000;   }
+.work-btn {float:left; }
+.resume-btn {float:right;}
+
+
+/*third-page:portfolio*/
+#portfolio {margin-top:5%; margin-bottom:3%;}
+#portfolio>div {margin-bottom: 20px; }
+#portfolio img{
+    width: 100%;
+}
+
+		.port_title h2{
+			font-size: 20px;
+			padding:10px;
+			
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			margin: 0;
+			font-weight: 400;
+			letter-spacing: 1px;
+			
+
+		}
+		
+				
+	
+
+
+/*프로젝트박스*/
+
+.projTitle>h1 {
+	font: bold 70px/70px 'Tajawal', cursive; color:#000;
+	position:absolute; top:20%; left:5%;
+}
+
+.projTitle>p {display:none;}
+.projTitle>a{font:20px/20px 'Tajawal', cursive; color:#000;
+	position:absolute; top:60%; left:5%; text-decoration:none;
+	}
+
+.projTitle>span {width:30px; height:1px; background:#000;
+	position:absolute; top:65%; left:5%;}
+	
+
+		
+}
+
+
+
+
+/*타블렛 extra-large2*/
+@media screen and (min-width:1001px) and (max-width:1200px) {
+
+	/*logo*/
+	.navWrapper h1 {font:bold 28px/70px 'Tajawal', sans-serif; color:#000; cursor:pointer;
+		position:absolute; top:0px; left:0px; padding-right:0;
+	 }
+
+	/*navigation*/
+	#navi { position:absolute; right:0px; top:0px; text-align:right; display:none;}
+	#navi>li {font:12px/70px 'arial'; color:#bbb; cursor:pointer; float:left; margin-left:30px;}
+	
+	#navi>li.on { color:#000;}
+	#navi>li:hover {color:#000;}
+
+	.typo {position:absolute; top:180px;  opacity:1;  z-index:100; 
+	 font-size:60px; line-height:70px; font-family: 'Tajawal', sans-serif; text-align:center;
+	transition:all 0.5s; transform-origin: top left; }
+	
+	/*forth-page:contact*/
+	#contact {  position:relative; width:100%; margin-bottom:150px;  }    	
+	#contact h2 {font:bold 80px/80px 'Tajawal', sans-serif; color:#333;
+					margin-top:5%; }
+	.con-typo {margin-top:5%; margin-bottom:15%;}					
+	.con-typo>h3 {font:italic 15px/35px 'Tajawal', sans-serif; color:#333;
+					margin-top:5%; }					
+				
+	#contact p {font:18px/28px 'Tajawal'; color:#444; 
+	margin-top:5%; text-align:left;}		
+
+	#findMe {margin-top:20px; margin-bottom:100px;}
+	#findMe>li { float:left; margin-right:30px; }				
+	#findMe>li>a {font:18px/18px 'Tajawal'; color:#000;}
+	
+	
+	
+	#skillset {height:20%; margin-top:50%; }
+	
+/*hamburger menu btn*/
+#hamburger{
+  transition: .3s ease-out;
+  width: 23px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  opacity:1;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/*핸드폰 모바일*/
+@media screen and (min-width:0px) and (max-width:486px) {
+body{width:100%;}
+/*header*/
+.navWrapper {height:50px;}
+
+    .container {
+		
+        width: 100%;
+		margin:0;
+    }
+
+/*logo*/
+.navWrapper h1 {font:bold 15px/50px 'Tajawal', sans-serif; color:#000; color:#000; cursor:pointer;
+
+ }
+
+ 
+/*navigation*/
+#navi>li {opacity:0;}
+
+
+/*hamburger menu btn*/
+#hamburger{
+  transition: .3s ease-out;
+  width: 23px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  opacity:1;
+
+}
+
+	
+/*background-typo*/
+.bg-typo {display:none;}
+.bg-typo1 {font:bold 60px/60px 'Tajawal', sans-serif; color:#fff;}
+.bg-typo2 {position:fixed; top:50%; left:50%;  margin-top:-100px; margin-left:-200px;
+width:400px; height:200px; opacity:0; text-align:center;}
+.bg-typo1.on {opacity:1;}
+.bg-typo2.on {opacity:1;}
+.bg-typo3.on {opacity:1;}
+.bg-typo4.on {opacity:1;}
+
+
+
+/*introduction typo*/				
+.typo {position:absolute; top:120px;  opacity:1;  z-index:100; 
+ font-size:30px; line-height:50px; font-family: 'Tajawal', sans-serif; text-align:center;
+transition:all 0.5s; transform-origin: top left; }
+.typo.show {opacity:1;}
+.typo.on {opacity:0; }
+.typo>span{background: -webkit-linear-gradient(60deg, #000, #ccc);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+	
+	
+	
+/*second-page:skillset*/
+#skillset {height:20%; margin-top:90%;}
+
+
+#skillset p {font:18px/25px 'Tajawal', sans-serif; color:#000; padding:30px; }
+
+
+/*포트폴리오 문단*/
+#portfolio {margin-bottom:5%; padding-top:70%;}
+#portfolio>div {margin-bottom:2%; }
+.port_title h2{
+			font-size: 20px;
+			padding:10px;
+			
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			margin: 0;
+			font-weight: 400;
+			letter-spacing: 1px;
+			
+
+		}
+
+/*forth-page:contact*/
+#contact {  position:relative; width:100%; margin-top:15%; }    		
+#contact h2 {font:bold 40px/40px 'Tajawal', sans-serif; color:#333;
+				margin-top:5%; }	
+.con-typo>h3 {font:italic 15px/35px 'Tajawal', sans-serif; color:#333;
+				margin-top:5%; }	
+.con-typo {margin-bottom:15%;}				
+#contact p {display:none;}		
+#conExplain {display:none;}
+#findMe {margin-top:20px;}
+#findMe>li { float:left; margin-right:30px; }				
+#findMe>li>a {font:18px/18px 'Tajawal'; color:#000;}
+	
+
+.port_title h2{
+			font-size: 20px;
+			padding:10px;
+			
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			margin: 0;
+			font-weight: 400;
+			letter-spacing: 1px;
+			
+
+		}
+
+		
+		
+.port_title2{
+			font-size:20px;
+			padding:10px;
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			margin: 10px 0;
+			font-weight: 400;
+			letter-spacing: 1px;
+			cursor:pointer;
+
+		}
+		
+#btn { width:100%; position:absolute;
+opacity:1;
+ font:bold 14px/14px 'Tajawal', sans-serif; color:#000;   }
+.work-btn {float:left;}
+.resume-btn {float:right;  }
+
+
+
+
+.buttonfx{
+  color: black; /* button text color */
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #000;
+  letter-spacing: 0.0625em;
+  padding:0;
+  text-transform: uppercase;
+  font: bold 13px 'Tajawal', sans-serif; /* use google font */
+  line-height: 1.5;
+  position: relative;
+	display: inline-block;
+
+  cursor: pointer;
+	text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all .5s;
+  
+  
+}
+
+.buttonfx.on {font:bold 12px/12px 'Tajawal', sans-serif;  }
+
+
+.buttonfx:before,
+.buttonfx:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 30px;
+  height: 100%;
+  background: #000; /* on hover background color */
+  z-index: -1;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+ 
+}
+
+.buttonfx:before{
+  background:transparent; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.buttonfx:hover{
+	color: white;
+}
+
+.buttonfx:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+
+.slideleft:after{
+  top: 0;
+  z-index: -1;
+  transform: translate3D(0,101%,0);
+}
+
+.slideleft:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+
+/*프로젝트박스*/
+
+	
+.bgBox {width:60%; height:100%;
+background:#eee;
+position:absolute; top:0px; right:0px;}
+
+
+.projTitle>h1 {
+display:none;
+}
+
+.projTitle>p {display:none;}
+.projTitle>a{display:none;}
+.projTitle>span {display:none;}
+	
+	
+.projBoxWrapper {
+	width:90%; height:45%; 
+	position:fixed; top:50%; right:5%;
+	margin-top:-225px;
+}	
+	
+ul#projBox>li {width:33.3333%; height:150px; 
+ float:left; cursor:pointer;
+}
+	
+
+}
+
+
+
+
+  
+
+

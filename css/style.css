@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+
+/*    Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+html,body {  width:100%; height:100%;  }
+a { outline:0; text-decoration:none; color:#bbb;}
+img {border:0;}
+
+
+.wrapper {width:100%; height:100%; background:#2b2b2b; 
+cursor:pointer;
+}
+.welcomeText {font:30px/40px 'arial'; color:#fff;
+position:fixed; top:50%; left:15%; margin-top:-60px;
+opacity:0;}
+.welcomeText>span {
+	display:inline-block;
+	opacity:0.2;
+}
+.myStory {width:40%; height:auto; font:20px/25px 'arial'; color:#555;
+position:fixed; top:55%; right:5%; margin-top:-200px; opacity:0;
+cursor:pointer;}
+.myStory>b {color:#ddd; transition:all 0.5s;}
+.myStory>b:hover {color:#ac0a01; }
+
+.line1 {width:0.5px; height:100%; background:#555;
+position:fixed; top:0; left:13%;}
+.line2 {width:0.5px; height:100%; background:#555;
+position:fixed; top:0; right:47%;}
+
+
+img {position:fixed; bottom:5%; right:11%; width:50px; 
+	-webkit-animation: clickMove 2s infinite; /* Safari 4.0 - 8.0 */
+    animation: clickMove 2s infinite;
+   }
+span.click {font:22px/22px 'Caveat Brush', cursive; color:#ddd;
+position:fixed; bottom:7%; right:3.5%;
+}
+
+@keyframes clickMove {
+    0%   {transform:rotateZ(10deg);}
+	50%  {transform:rotateZ(-10deg);}
+    100% {transform:rotateZ(10deg);}
+}
+
+.explore {position:fixed; top:65%; left:32%;
+font:18px/18px 'arial'; color:#ddd;}
+i {font:18px/18px 'arial'; color:#ddd;
+position:fixed; top:65%; left:44%;
+	-webkit-animation: exploreMove 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: exploreMove 1s infinite;}
+.explore:hover {color:#fff;}
+
+@keyframes exploreMove {
+	100%  {left:44.5%;}
+}
