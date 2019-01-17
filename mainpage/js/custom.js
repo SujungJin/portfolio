@@ -96,7 +96,7 @@ function initDom(){
 	class_name="on";
 	dur = 600;
 	ease = "swing";
-	baseLine =-700; //다음 박스가 아래에서 출현하기 시작할때 다음 네비버튼이 미리 활성화 되도록 하기위해서
+	baseLine =-600; //다음 박스가 아래에서 출현하기 시작할때 다음 네비버튼이 미리 활성화 되도록 하기위해서
 }	
 
 //각 박스의 세로 위치값을 배열에 저장하는 함수정의
@@ -172,7 +172,7 @@ function bindingEvent(){
 
 				$typo.addClass('on');
 	
-				$typo.css({'opacity':'1'},1600);
+				$('.typo').css({'opacity':'1'},1600);
 			
 			$('.buttonfx').addClass('on'); //SEE HOW I WORK, RESUME 버튼모션
 			
@@ -185,9 +185,9 @@ function bindingEvent(){
 			
 			$('.buttonfx').removeClass('on');
 			
-		}else if (scroll>2000){ 
+		}else if (scroll>3000){ 
 	
-			//$('.typo').css({'opacity':'0'},800);
+			$('.typo').css({'opacity':'0'},800);
 			$('.buttonfx').removeClass('on');
 			
 		}else{
@@ -301,6 +301,7 @@ function matchHeight(item){
 //첫화면 로딩시
 function firstPage(){
 	$('.navWrapper').stop(true,true).animate({'top':'0', 'opacity':'1'},800);	
+	
 	$('.typo').stop(true,true).animate({'top':'18%', 'opacity':'1'});
 	$('#btn').stop(true,true).animate({'top':'0', 'opacity':'1'},800);
 	$('.footer').stop(true,true).animate({'bottom':'15%', 'opacity':'1'},800);

@@ -13,6 +13,10 @@ $('.welcomeText').stop(true,true).animate({'top':'50%', 'opacity':'1'},1000,func
 	$('.welcomeText>span').eq(6).delay(3000).animate({'opacity':'1'});
 	$('.welcomeText>span').eq(7).delay(3500).animate({'opacity':'1'});
 	$('.welcomeText>span').eq(8).delay(4000).animate({'opacity':'1'});
+	$('.wrapper').stop(true,true).delay(4500).animate({'left':'-100%'},1000, function(){
+		$(location).attr('href','mainpage/home.html');
+		history.pushState(null,null,'mainpage');
+	});
 	
 });
 
@@ -20,7 +24,7 @@ $('.welcomeText').stop(true,true).animate({'top':'50%', 'opacity':'1'},1000,func
 
 //화면클릭시 메인페이지로 이동
 $('html,body').on('click',function(){
-	$('.wrapper').fadeOut(500);
+	
 	$(location).attr('href','mainpage/home.html');
 	history.pushState(null,null,'mainpage');
 });
