@@ -172,7 +172,7 @@ function bindingEvent(){
 
 				$typo.addClass('on');
 	
-				$('.typo').css({'opacity':'1'},1600);
+				$typo.css({'opacity':'1'},1600);
 			
 			$('.buttonfx').addClass('on'); //SEE HOW I WORK, RESUME 버튼모션
 			
@@ -187,7 +187,7 @@ function bindingEvent(){
 			
 		}else if (scroll>2000){ 
 	
-			$('.typo').css({'opacity':'0'},800);
+			//$('.typo').css({'opacity':'0'},800);
 			$('.buttonfx').removeClass('on');
 			
 		}else{
