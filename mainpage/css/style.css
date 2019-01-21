@@ -57,6 +57,33 @@ position:fixed; top:0; left:-200%;}
 .header>h1.logo {font-family: 'Racing Sans One', cursive;
 }
 
+
+.owe-project {
+	display:inline-block;
+	height:300px;
+	position:fixed; top:50%; left:-5%;
+	margin-top:-150px;
+	transition:all 1s;
+	font:30px/30px 'Racing Sans One', cursive;
+
+}
+.owe-project img {
+	height:70%;
+	position:relative; right:0;
+}
+.owe-project:hover {
+	left:0%;
+}
+.owe-project span {
+	color:#000;
+	font-size:30px;
+}
+ul#owe-navi>li>a {
+	display:inline-block;
+	font-size:20px/25px;
+}
+
+
 /*hamburgerMenuBox*/
 .hamburgerMenuBox {
 	width:100%; height:0%;
